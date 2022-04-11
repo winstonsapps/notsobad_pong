@@ -26,7 +26,7 @@ def draw(side, offset, circlecoords=(0,0)): #side: string = 'left' or 'right'or 
         return(pygame.draw.line(screen, white, (1250, 50+offset), (1250 , -50+offset), 16))
     if side == 'circle':
         pygame.draw.circle(screen, white, circlecoords, speed)
-        return(pygame.draw.circle(screen, white, circlecoords, speed*4+7))
+        return(pygame.draw.circle(screen, white, circlecoords, 15))
 
 def move_dir(steps, direction): #changes number and direction to x,y shifts
     
